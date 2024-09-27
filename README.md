@@ -40,7 +40,7 @@ IF %M%==3 GOTO EOF
 
 set /p url= Paste Youtube Channel URL:
 
-youtube-dl -f best -ciw -o “%(title)s.%(ext)s” -v %url%
+youtube-dl -f best -ciw -o “%%(title)s.%%(ext)s” -v %url%
 
 Echo "Completed Download(s)."
 
