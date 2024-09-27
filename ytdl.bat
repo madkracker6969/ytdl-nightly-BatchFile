@@ -16,7 +16,7 @@ IF %M%==2 GOTO UPDATE
 IF %M%==3 GOTO EOF
 :DOWNLOAD
 set /p url= Paste Youtube Channel URL:
-youtube-dl -f best -ciw -o “%(title)s.%(ext)s” -v %url%
+youtube-dl -f best -ciw -o “%%(title)s.%%(ext)s” -v %url%
 Echo "Completed Download(s)."
 pause
 GOTO MENU
